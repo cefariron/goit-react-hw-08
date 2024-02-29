@@ -4,7 +4,7 @@ import { MdLocalPhone } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import css from "../Contact/Contact.module.css";
 
-export const Contact = ({ id, name, phone }) => {
+export const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
   const handleRemove = () => dispatch(deleteContact(id));
@@ -15,7 +15,7 @@ export const Contact = ({ id, name, phone }) => {
           <IoMdContact className={css.icon} /> {name}
         </p>
         <p>
-          <MdLocalPhone className={css.icon} /> {phone}
+          <MdLocalPhone className={css.icon} /> {number}
         </p>
       </div>
       <button type="button" onClick={handleRemove}>

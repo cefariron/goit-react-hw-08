@@ -12,7 +12,7 @@ const validationSchema = Yup.object().shape({
     .required("Field cant be empty!"),
   password: Yup.string()
     .min(3, "Enter 3 to 15 characters")
-    .max(15, "Enter 3 to 15 characters")
+    .max(25, "Enter 3 to 25 characters")
     .required("Field cant be empty!"),
 });
 

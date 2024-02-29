@@ -10,16 +10,16 @@ export const ContactList = () => {
   const visibleContacts = contacts.filter(
     (contact) =>
       contact.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      contact.phone.includes(searchQuery)
+      contact.number.includes(searchQuery)
   );
 
   return (
     <div className={css.container}>
       <ul className={css.list}>
-        {visibleContacts.map(({ id, name, phone }) => {
+        {visibleContacts.map(({ id, name, number }) => {
           return (
             <li className={css.item} key={id}>
-              <Contact id={id} name={name} phone={phone} />
+              <Contact id={id} name={name} number={number} />
             </li>
           );
         })}

@@ -1,0 +1,36 @@
+.form {
+    padding: 5px;
+    width: 260px;
+    margin-bottom: 10px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.input {
+    display: block;
+    width: 250px;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.error {
+    color: red;
+}
+
+
+.inputContainer {
+    margin-bottom: 10px;
+  }

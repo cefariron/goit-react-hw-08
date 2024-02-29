@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { registration } from "../../redux/auth/operations";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useId } from "react";
-import css from "./LoginForm.module.css";
+import css from "./RegistrationForm.module.css";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
@@ -12,7 +12,7 @@ const validationSchema = Yup.object().shape({
     .required("Field cant be empty!"),
   password: Yup.string()
     .min(3, "Enter 3 to 15 characters")
-    .max(15, "Enter 3 to 15 characters")
+    .max(25, "Enter 3 to 25 characters")
     .required("Field cant be empty!"),
 });
 
