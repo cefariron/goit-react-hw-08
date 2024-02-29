@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 260px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.icon {
+    margin-right: 10px;
+}
