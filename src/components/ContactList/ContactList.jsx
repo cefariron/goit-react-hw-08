@@ -7,8 +7,10 @@ export const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const searchQuery = useSelector(selectSearchQuery);
 
-  const visibleContacts = contacts.filter((contact) =>
-    contact.name.toLowerCase().includes(searchQuery.toLowerCase())
+  const visibleContacts = contacts.filter(
+    (contact) =>
+      contact.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      contact.phone.includes(searchQuery)
   );
 
   return (
