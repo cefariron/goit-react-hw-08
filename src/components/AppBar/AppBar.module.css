@@ -1,11 +1,26 @@
 .header {
+    padding: 0 15px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 0 35px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        padding: 0 60px;
+    }
+}
+
+.navWrapper {
     display: flex;
     justify-content: space-between;
 
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 0 auto;
-    margin-bottom: 20px;
 
-    width: 360px;
+    width: 100%;
 }

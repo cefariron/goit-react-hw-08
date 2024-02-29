@@ -6,6 +6,7 @@ import { useAuth } from "../hooks";
 import { Layout } from "./Layout/Layout";
 import { PrivateRoute } from "./PrivateRoute";
 import { RestrictedRoute } from "./RestrictedRoute";
+import "./App.css";
 
 const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const RegistrationPage = lazy(() =>

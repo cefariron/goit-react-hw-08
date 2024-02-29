@@ -1,0 +1,69 @@
+.allContainer {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.mainContainer {
+    flex: 1 1 0%;
+    padding-bottom: 60px;
+    padding-inline: 8%;
+    padding-top: 30px;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(253, 245, 219);
+}
+
+.contentContainer {
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bgImg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 8px;
+    display: flex;
+    height: 300px;
+    overflow: auto;
+    width: 100%;
+    background-image: url(https://login.smoobu.com/img/login/image1.png);
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 16px;
+    width: 90%;
+    margin-inline: auto;
+    font-family: Manrope, sans-serif;
+}
+
+.topSubscription {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.bottomSubscription {
+    margin: 0px;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
