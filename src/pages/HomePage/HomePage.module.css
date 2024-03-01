@@ -1,6 +1,6 @@
 .arrowsContainer {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
 
