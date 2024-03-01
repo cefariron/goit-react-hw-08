@@ -15,15 +15,18 @@ export const ContactList = () => {
 
   return (
     <div className={css.container}>
-      <ul className={css.list}>
-        {visibleContacts.map(({ id, name, number }) => {
-          return (
-            <li className={css.item} key={id}>
-              <Contact id={id} name={name} number={number} />
-            </li>
-          );
-        })}
-      </ul>
+      <div className={css.listContainer}>
+        <h3 className={css.title}>Contacts</h3>
+        <ul className={css.list}>
+          {visibleContacts.map(({ id, name, number }) => {
+            return (
+              <li className={css.item} key={id}>
+                <Contact id={id} name={name} number={number} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

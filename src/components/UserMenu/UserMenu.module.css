@@ -1,47 +1,54 @@
 .wrapper {
-    display: flex;
-    gap: 10px;
-    padding: 5px 0;
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
 }
 
 @media only screen and (min-width: 768px) {
-    .wrapper {
-      gap: 15px;
-      padding: 8px 0;
-    }
+  .wrapper {
+    gap: 15px;
+    padding: 8px 0;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .wrapper {
-      gap: 20px;
-      padding: 10px 0;
-    }
-  }
-
-.username {
-    display: block;
-    padding: 6px;
-    font-size: 14px;
-}
-
-.btnLogout {
-    padding: 6px;
-    color: black;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 @media only screen and (min-width: 1024px) {
-    .btnLogout {
-     padding: 8px;
-    }
+  .wrapper {
+    gap: 20px;
+    padding: 10px 0;
   }
+}
 
-  .btnLogout:hover,
-  .btnLogout:focus,
-  .active {
-    background-color: rgb(244, 244, 244);
+.username {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .username {
+    display: block;
+    padding: 6px;
   }
+}
+
+.btnLogout {
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  padding: 6px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media only screen and (min-width: 1024px) {
+  .btnLogout {
+    padding: 8px;
+  }
+}
+
+.btnLogout:hover,
+.btnLogout:focus,
+.active {
+  background-color: rgb(244, 244, 244);
+}

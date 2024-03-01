@@ -1,7 +1,8 @@
 import { useDispatch } from "react-redux";
 import { registration } from "../../redux/auth/operations";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import { useId } from "react";
+import { useId, useState } from "react";
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 import css from "./RegistrationForm.module.css";
 import * as Yup from "yup";
 
@@ -40,6 +41,12 @@ export const RegistrationForm = () => {
     actions.resetForm();
   };
 
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
+  };
+
   return (
     <>
       <Formik
@@ -48,30 +55,67 @@ export const RegistrationForm = () => {
         validationSchema={validationSchema}
       >
         <Form className={css.form}>
+          <div className={css.wContainer}>
+            <span className={css.wSpan}>Complete the registration form</span>
+          </div>
           <div className={css.inputContainer}>
             <label className={css.label} htmlFor={nameFieldId}>
-              Name
+              Name *
             </label>
             <Field className={css.input} id={nameFieldId} name="name" />
             <ErrorMessage className={css.error} name="name" as="span" />
           </div>
           <div className={css.inputContainer}>
             <label className={css.label} htmlFor={emailFieldId}>
-              Email
+              Email *
             </label>
             <Field className={css.input} id={emailFieldId} name="email" />
             <ErrorMessage className={css.error} name="email" as="span" />
           </div>
           <div className={css.inputContainer}>
             <label className={css.label} htmlFor={passwordFieldId}>
-              Password
+              Password *
             </label>
-            <Field className={css.input} id={passwordFieldId} name="password" />
+            <div className={css.passwordContainer}>
+              <Field
+                className={css.input}
+                id={passwordFieldId}
+                name="password"
+                type={showPassword ? "text" : "password"}
+              />
+              <span
+                className={css.togglePassword}
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? (
+                  <BsEye className={css.eyeIcon} />
+                ) : (
+                  <BsEyeSlash className={css.eyeIcon} />
+                )}
+              </span>
+            </div>
             <ErrorMessage className={css.error} name="password" as="span" />
+          </div>
+          <div className={css.option}>
+            <div>
+              <label className={css.checkboxContainer}>
+                <input type="checkbox" id="rememberMeCheckbox" />
+                <span className={css.checkmark}></span>
+                Sign in and stay logged in
+              </label>
+            </div>
           </div>
           <button className={css.btn} type="submit">
             Sign Up
           </button>
+          <div className={css.privacy}>
+            <a className={css.privacyLink} href="https://google.com/">
+              How it works?
+            </a>
+            <a className={css.privacyLink} href="https://google.com/">
+              Privacy Policy
+            </a>
+          </div>
         </Form>
       </Formik>
     </>

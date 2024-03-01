@@ -1,5 +1,20 @@
-.title {
-    width: 260px;
-    margin: 0 auto;
-    text-align: center;
+.container {
+    padding: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    max-width: 732px;
+    margin-top: 15px;
+    margin-inline: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 988px;
+}
 }

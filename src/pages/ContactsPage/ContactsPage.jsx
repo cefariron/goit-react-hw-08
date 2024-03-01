@@ -4,21 +4,22 @@ import { ContactList } from "../../components/ContactList/ContactList";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/operations";
-import css from"./ContactsPage.module.css";
+import css from "./ContactsPage.module.css";
 
-export default function ContactsPage () {
+export default function ContactsPage() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchContacts())
-  }, [dispatch])
+    dispatch(fetchContacts());
+  }, [dispatch]);
   return (
     <>
-      <div>
-        <h1 className={css.title}>Phonebook</h1>
+      <div className={css.container}>
         <ContactForm />
-        <SearchBox />
-        <ContactList />
+        <div className={css.contentContainer}>
+          <SearchBox />
+          <ContactList />
+        </div>
       </div>
     </>
   );

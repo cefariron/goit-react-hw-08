@@ -16,17 +16,23 @@ export const SearchBox = () => {
   };
 
   return (
-    <div className={css.container}>
-      <label className={css.label} htmlFor={inputId}>
-        Search contacts by name
-      </label>
-      <input
-        className={css.input}
-        type="text"
-        id={inputId}
-        value={searchQuery}
-        onChange={handleChange}
-      />
-    </div>
+    <>
+      <div className={css.searhBoxContainer}>
+        <h3 className={css.titleMobile}>Search</h3>
+        <h3 className={css.titleTablet}>Contacts</h3>
+        <div className={css.inputContainer}>
+          <label className={css.label} htmlFor={inputId}>
+            Search contacts by name or number
+          </label>
+          <input
+            className={css.input}
+            type="text"
+            id={inputId}
+            value={searchQuery}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+    </>
   );
 };

@@ -11,6 +11,13 @@ export const AppBar = () => {
     <header className={css.header}>
       <div className={css.navWrapper}>
         <Navigation />
+        <div className={css.logoContainer}>
+          <img className={css.logo}
+            src="https://play-lh.googleusercontent.com/reWUjxXDgPjx-1rU3zMZBNMnzIpXXKKwd7Tl08RYrNH91Gmmd7BMob2uCVmzbAjh1Bw"
+            alt="logo"
+          />
+          <p><strong>Cloud Contacts</strong></p>
+        </div>
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </div>
     </header>
