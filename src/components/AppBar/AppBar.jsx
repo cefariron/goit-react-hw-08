@@ -9,7 +9,7 @@ export const AppBar = () => {
 
   return (
     <header className={css.header}>
-      <div className={css.navWrapper}>
+      <div className={isLoggedIn ? css.navWrapperLoggedIn : css.navWrapperLoggedOut}>
         <Navigation />
         <div className={css.logoContainer}>
           <img className={css.logo}
