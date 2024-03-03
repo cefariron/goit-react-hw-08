@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+.wrapper {
+    padding: 8px;
+    background-color: white;
+    border: 1.3px solid #d6d8db;
+    border-radius: 8px;
+}
+
 .container {
 
     display: flex;
@@ -19,19 +26,14 @@
 
     max-width: 265px;
     width: 265px;
-    padding: 8px;
-    /* padding-top: 36px; */
-    background-color: white;
-    border: 1.3px solid #d6d8db;
-    border-radius: 8px;
+
 }
 
 @media only screen and (min-width: 1024px) {
     .container {
         max-width: 320px;
         width: 320px;
-        height: 120px;
-  }
+    }
 }
 
 .userInfoContainer {
@@ -48,10 +50,10 @@
 
 @media only screen and (min-width: 1024px) {
     .avatar {
-    width: 120px;
-    height: 120px;
-    margin-right: 10px;
-  }
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+    }
 }
 
 .contactInfo {
