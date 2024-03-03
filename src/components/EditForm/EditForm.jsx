@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/operations";
+import { editContact } from "../../redux/operations";
 import { useId } from "react";
 import css from "../EditForm/EditForm.module.css";
 // import * as Yup from "yup";
@@ -16,19 +16,19 @@ import css from "../EditForm/EditForm.module.css";
 //     .required("Field cant be empty!"),
 // });
 
-export const EditForm = () => {
+export const EditForm = ({ id, name, number, setIsEditNow }) => {
   const dispatch = useDispatch();
   const nameFieldId = useId();
   const numberFieldId = useId();
 
   const initialValues = {
-    name: "",
-    number: "",
+    name,
+    number,
   };
 
-  const handleSubmit = (values, actions) => {
-    dispatch(addContact(values));
-    actions.resetForm();
+  const handleSubmit = (values) => {
+    dispatch(editContact({ contact: values, contactId: id }));
+    setIsEditNow();
   };
 
   return (
@@ -39,12 +39,12 @@ export const EditForm = () => {
         // validationSchema={validationSchema}
       >
         <Form className={css.form}>
-          <h3 className={css.title}>Add contact</h3>
+          <h3 className={css.title}>Edit contact</h3>
           <div className={css.inputContainer}>
             <label className={css.label} htmlFor={nameFieldId}>
               Name
             </label>
-            <Field className={css.input} id={nameFieldId} name="name"/>
+            <Field className={css.input} id={nameFieldId} name="name" />
             <ErrorMessage className={css.error} name="name" as="span" />
           </div>
           <div className={css.inputContainer}>
@@ -63,9 +63,14 @@ export const EditForm = () => {
               </label>
             </div>
           </div>
-          <button className={css.btn} type="submit">
-            Add contact
-          </button>
+          <div className={css.editBtnContainer}>
+            <button className={css.btnCancel} type="button" onClick={() => setIsEditNow(false)}>
+              Cancel
+            </button>
+            <button className={css.btnSave} type="submit">
+              Save
+            </button>
+          </div>
         </Form>
       </Formik>
     </>
