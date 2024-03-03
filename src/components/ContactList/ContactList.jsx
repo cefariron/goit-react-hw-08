@@ -26,8 +26,12 @@ export const ContactList = () => {
         <ul className={css.list}>
           {visibleContacts.map(({ id, name, number }) => {
             return (
-              <li className={css.item} key={id} onClick={() => handleContactClick(id)}>
-                <Contact id={id} name={name} number={number} />
+              <li
+                className={css.item}
+                key={id}
+                // onClick={() => handleContactClick(id)}
+              >
+                <Contact handleContactClick={handleContactClick} id={id} name={name} number={number} />
               </li>
             );
           })}

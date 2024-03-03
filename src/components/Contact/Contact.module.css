@@ -17,9 +17,12 @@
 }
 
 .btnContainer {
+    position: relative;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    
 }
 
 .btn {
@@ -40,4 +43,9 @@
 .btn:hover,
 .btn:focus {
     background-color: rgb(244, 244, 244);
+}
+
+.overlay {
+    cursor: pointer;
+    width: 190px;
 }

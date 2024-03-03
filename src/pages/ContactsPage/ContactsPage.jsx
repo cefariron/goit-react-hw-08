@@ -4,8 +4,8 @@ import { ContactList } from "../../components/ContactList/ContactList";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/operations";
-import css from "./ContactsPage.module.css";
 import { Modal } from "../../components/Modal/Modal";
+import css from "./ContactsPage.module.css";
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
@@ -20,8 +20,8 @@ export default function ContactsPage() {
         <div className={css.contentContainer}>
           <SearchBox />
           <ContactList />
-          <Modal />
         </div>
+          <Modal />
       </div>
     </>
   );
