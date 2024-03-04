@@ -10,8 +10,8 @@ import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .min(1, "Enter 3 to 20 characters")
-    .max(50, "Enter 3 to 20 characters")
+    .min(1, "Enter 1 to 20 characters")
+    .max(20, "Enter 3 to 20 characters")
     .required("Field cant be empty! Please enter your name."),
   email: Yup.string()
     .email("Invalid email format")
@@ -88,6 +88,7 @@ export const RegistrationForm = () => {
                 }`}
                 id={nameFieldId}
                 name="name"
+                autoFocus
                 {...getFieldProps("name")}
               />
               {touched.name && errors.name && (

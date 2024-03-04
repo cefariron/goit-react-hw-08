@@ -187,3 +187,20 @@
 .btnCancel:focus {
     background-color: rgb(224, 40, 40);
 }
+
+.errorInput {
+    border: 1px solid rgb(255, 37, 37);
+  }
+  
+
+  .successInput {
+    border: 1px solid rgb(0, 229, 0);
+  }
+
+  .error {
+    position: absolute;
+    bottom: -18px;
+    left: 5px;
+    color: red;
+    font-size: 12px;
+  }
