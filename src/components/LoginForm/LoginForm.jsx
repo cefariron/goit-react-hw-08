@@ -82,7 +82,6 @@ export const LoginForm = () => {
                 }`}
                 id={emailFieldId}
                 name="email"
-                autoFocus
                 {...getFieldProps("email")}
               />
               {touched.email && errors.email && (

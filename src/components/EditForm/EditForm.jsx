@@ -60,6 +60,7 @@ export const EditForm = ({ id, name, number, setIsEditNow }) => {
                 }`}
                 id={nameFieldId}
                 name="name"
+                autoFocus
                 {...getFieldProps("name")}
               />
               {touched.name && errors.name && (

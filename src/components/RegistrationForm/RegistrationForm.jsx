@@ -88,7 +88,6 @@ export const RegistrationForm = () => {
                 }`}
                 id={nameFieldId}
                 name="name"
-                autoFocus
                 {...getFieldProps("name")}
               />
               {touched.name && errors.name && (
