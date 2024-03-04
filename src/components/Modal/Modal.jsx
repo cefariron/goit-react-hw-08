@@ -67,7 +67,7 @@ export const Modal = () => {
             <div className={css.userInfoContainer}>
               <img
                 className={css.avatar}
-                src="src\components\Modal\avatar.png"
+                src="./avatar.png"
                 alt="avatar"
               />
               <div className={css.contactInfo}>
