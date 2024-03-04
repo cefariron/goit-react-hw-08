@@ -13,18 +13,6 @@
     }
 }
 
-
-
-.logoContainer {
-    width: 208px;
-    height: 50px;
-    background-image: url(https://operto.my.site.com/main/servlet/rtaImage?eid=ka04x000001GMfn&feoid=00N4x00000OMoYy&refid=0EM4x000000YbBy);
-    background-size: cover;
-    background-position: center;
-    align-self: center;
-    margin-bottom: 24px;
-}
-
 .wContainer {
     margin-bottom: 8px;
 }
