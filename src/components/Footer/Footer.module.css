@@ -10,6 +10,19 @@
     gap: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 742px;
+        margin-inline: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 888px;
+    }
+}
+
 .contactsWrapper {
     display: block;
 }
@@ -25,6 +38,12 @@
     align-items: center;
     gap: 5px;
     margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .logoContainer {
+        display: none;
+    }
 }
 
 .logo {
@@ -51,13 +70,33 @@
     font-size: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+    .subText {
+        width: 280px;
+    }
+}
+
 .socialContainer {
     margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .socialContainer {
+        margin-bottom: 0;
+    }
 }
 
 .socialList {
     display: flex;
     gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .socialList {
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 10px;
+    }
 }
 
 .socialItem {
@@ -67,6 +106,25 @@
 
 .contactsContainer {
     margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 375px) {
+    .contactsContainer {
+        min-width: 169px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .contactsContainer {
+        min-width: 195px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contactsContainer {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
 }
 
 .contactsTitle {
@@ -115,6 +173,12 @@ address {
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .form {
+        width: 279px;
+    }
+}
+
 .inputContainer {
     position: relative;
 }
@@ -133,13 +197,6 @@ address {
 
 
     border: 1.3px solid #d6d8db;
-}
-
-@media only screen and (min-width: 768px) {
-    .input {
-        padding: 12px 16px;
-        font-size: 20px;
-    }
 }
 
 .input:focus {
@@ -184,12 +241,6 @@ address {
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
-}
-
-@media only screen and (min-width: 768px) {
-    .btn {
-        padding: 12px 16px;
-    }
 }
 
 .btn:hover,
