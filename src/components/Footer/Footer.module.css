@@ -1,6 +1,42 @@
 .footer {
-    height: 120px;
     background-color: white;
     margin-top: 4px;
+    padding: 20px 5px;
     border-top: 1px solid rgb(214, 214, 214);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.contactsWrapper {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .contactsWrapper {
+        display: flex;
+    }
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.subTitle {
+    margin-bottom: 10px;
+}
+
+.subText {
+    min-width: 140px;
+    font-size: 14px;
 }
