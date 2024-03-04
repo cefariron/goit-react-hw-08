@@ -10,7 +10,7 @@
 .wrapper {
     display: flex;
     cursor: pointer;
-    width: 300px;
+    width: 400px;
 }
 
 .avatar {
@@ -27,6 +27,7 @@
 .name {
     margin-bottom: 4px;
 }
+
 
 .btnContainer {
     position: relative;
