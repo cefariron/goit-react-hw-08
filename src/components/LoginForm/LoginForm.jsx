@@ -67,7 +67,7 @@ export const LoginForm = () => {
             </div>
             <div
               className={css.inputContainer}
-              style={{ marginBottom: touched.email && errors.email && "10px" }}
+              style={{ marginBottom: touched.email && errors.email && "12px" }}
             >
               <label className={css.label} htmlFor={emailFieldId}>
                 Email *
@@ -89,7 +89,12 @@ export const LoginForm = () => {
                 <span className={css.error}>{errors.email}</span>
               )}
             </div>
-            <div className={css.inputContainer}>
+            <div
+              className={css.inputContainer}
+              style={{
+                marginBottom: touched.password && errors.password && "2px",
+              }}
+            >
               <label className={css.label} htmlFor={passwordFieldId}>
                 Password *
               </label>

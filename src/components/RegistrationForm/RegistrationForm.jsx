@@ -73,7 +73,7 @@ export const RegistrationForm = () => {
             </div>
             <div
               className={css.inputContainer}
-              style={{ marginBottom: touched.name && errors.name && "10px" }}
+              style={{ marginBottom: touched.name && errors.name && "14px" }}
             >
               <label className={css.label} htmlFor={nameFieldId}>
                 Name *
@@ -97,7 +97,7 @@ export const RegistrationForm = () => {
             </div>
             <div
               className={css.inputContainer}
-              style={{ marginBottom: touched.email && errors.email && "10px" }}
+              style={{ marginBottom: touched.email && errors.email && "14px" }}
             >
               <label className={css.label} htmlFor={emailFieldId}>
                 Email *
@@ -118,7 +118,10 @@ export const RegistrationForm = () => {
                 <span className={css.error}>{errors.email}</span>
               )}
             </div>
-            <div className={css.inputContainer}>
+            <div
+              className={css.inputContainer}
+              style={{ marginBottom: touched.email && errors.email && "2px" }}
+            >
               <label className={css.label} htmlFor={passwordFieldId}>
                 Password *
               </label>
@@ -136,9 +139,9 @@ export const RegistrationForm = () => {
                   type={showPassword ? "text" : "password"}
                   {...getFieldProps("password")}
                 />
-                  {touched.password && errors.password && (
-                    <span className={css.error}>{errors.password}</span>
-                  )}
+                {touched.password && errors.password && (
+                  <span className={css.error}>{errors.password}</span>
+                )}
                 <span
                   className={css.togglePassword}
                   onClick={togglePasswordVisibility}
