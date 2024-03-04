@@ -45,7 +45,7 @@ export const ContactForm = () => {
             <h3 className={css.title}>Add contact</h3>
             <div
               className={css.inputContainer}
-              style={{ marginBottom: touched.name && errors.name && "12px" }}
+              style={{ marginBottom: touched.name && errors.name && "14px" }}
             >
               <label className={css.label} htmlFor={nameFieldId}>
                 Name
@@ -68,7 +68,7 @@ export const ContactForm = () => {
             </div>
             <div
               className={css.inputContainer}
-              style={{ marginBottom: touched.number && errors.number && "4px" }}
+              style={{ marginBottom: touched.number && errors.number && "6px" }}
             >
               <label className={css.label} htmlFor={numberFieldId}>
                 Number
