@@ -7,6 +7,18 @@
     border: 1.3px solid #d6d8db;
     border-radius: 8px;
 }
+.wrapper {
+    display: flex;
+    cursor: pointer;
+    width: 300px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
 
 .iconInfo {
     margin-right: 10px;
@@ -43,9 +55,4 @@
 .btn:hover,
 .btn:focus {
     background-color: rgb(244, 244, 244);
-}
-
-.overlay {
-    cursor: pointer;
-    width: 190px;
 }

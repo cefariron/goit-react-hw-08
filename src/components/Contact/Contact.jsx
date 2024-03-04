@@ -12,13 +12,20 @@ export const Contact = ({ id, name, number, handleContactClick }) => {
   const handleRemove = () => dispatch(deleteContact(id));
   return (
     <div className={css.container}>
-      <div className={css.overlay} onClick={() => handleContactClick(id)}>
-        <p className={css.name}>
-          <RiContactsLine className={css.iconInfo} /> {name}
-        </p>
-        <p>
-          <LuPhone className={css.iconInfo} /> {number}
-        </p>
+      <div className={css.wrapper} onClick={() => handleContactClick(id)}>
+        <img
+          className={css.avatar}
+          src="https://ltdfoto.ru/images/2024/03/04/avatar.png"
+          alt="avatar"
+        />
+        <div className={css.userInfoContainer}>
+          <p className={css.name}>
+            <RiContactsLine className={css.iconInfo} /> {name}
+          </p>
+          <p>
+            <LuPhone className={css.iconInfo} /> {number}
+          </p>
+        </div>
       </div>
       <div className={css.btnContainer}>
         <button className={css.btn} type="button">
