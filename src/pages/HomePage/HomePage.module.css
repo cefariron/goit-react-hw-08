@@ -49,9 +49,16 @@
 
 .slidesWrapper {
     display: flex;
+    align-items: stretch;
     transition: transform 0.7s ease;
 }
 
 .slide {
     flex: 0 0 100%;
 }
+
+.slideContent {
+    display: flex; /* Делаем содержимое слайда flex-контейнером */
+    flex-direction: column; /* Располагаем элементы содержимого слайда в столбец */
+    height: 100%; /* Заполняем высоту слайда */
+  }

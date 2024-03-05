@@ -12,12 +12,24 @@
 
 .mainContainer {
     flex: 1 1 0%;
-    padding-bottom: 70px;
+    /* padding-bottom: 30px; */
     padding-inline: 8%;
     padding-top: 30px;
     height: 100%;
     border-radius: 4px;
     background-color: rgb(237, 237, 255);
+}
+
+@media only screen and (min-width: 375px) {
+    .mainContainer {
+    
+  }
+}
+
+@media only screen and (min-width: 425px) {
+    .mainContainer {
+    
+  }
 }
 
 .contentContainer {
@@ -34,38 +46,57 @@
     gap: 32px;
 }
 
-.bgImg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.bgImgContainer {
+    max-width: 344px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .bgImgContainer {
+        max-width: 846px;
+    }
+}
+
+.bgImgTel {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    display: flex;
-    height: 300px;
-    overflow: auto;
-    width: 100%;
-    background-image: url(https://login.smoobu.com/img/login/image1.png);
+}
+
+@media only screen and (min-width: 768px) {
+    .bgImgTel {
+        display: none;
+    }
+}
+
+.bgImg {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .bgImg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 }
 
 .subscription {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    gap: 16px;
-    max-width: 632px;
+    max-width: 640px;
     margin-inline: auto;
     font-family: Manrope, sans-serif;
 }
 
 .topSubscription {
-    margin: 0px;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .bottomSubscription {
-    margin: 0px;
-    line-height: 17px;
-    font-size: 14px;
-    font-weight: 400;
+}
+
+.wrap {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(237, 237, 255);
 }
