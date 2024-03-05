@@ -21,7 +21,7 @@ export default function ContactsPage() {
           <SearchBox />
           <ContactList />
         </div>
-          <Modal />
+        <Modal />
       </div>
     </>
   );

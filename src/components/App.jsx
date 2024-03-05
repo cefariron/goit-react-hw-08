@@ -1,4 +1,4 @@
-import { useEffect, lazy } from "react"; 
+import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import { refreshUser } from "../redux/auth/operations";
@@ -56,7 +56,6 @@ export const App = () => {
           />
         </Route>
       </Routes>
-      {/* <Toaster /> */}
     </>
   );
 };

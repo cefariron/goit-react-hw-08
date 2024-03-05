@@ -20,13 +20,11 @@ export const FirstSlide = () => {
             </div>
             <div className={css.subscription}>
               <h3 className={css.topSubscription}>
-                Cloud Contacts - the best app for manage your
-                contacts! 🚀
+                Cloud Contacts - the best app for manage your contacts! 🚀
               </h3>
               <p className={css.bottomSubscription}>
-                All modern approaches and tools to make your
-                experience of working with your contacts as convenient and easy
-                as possible!
+                All modern approaches and tools to make your experience of
+                working with your contacts as convenient and easy as possible!
               </p>
             </div>
           </div>

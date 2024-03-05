@@ -30,15 +30,17 @@
 }
 
 .btnLogout {
+  padding: 6px;
+
+  color: black;
+  background-color: transparent;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
   font-family: Manrope, sans-serif;
   font-size: 16px;
-  padding: 6px;
-  color: black;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 @media only screen and (min-width: 1024px) {

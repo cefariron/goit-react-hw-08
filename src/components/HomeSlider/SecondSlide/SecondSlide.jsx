@@ -24,9 +24,7 @@ export const SecondSlide = () => {
               </h3>
               <p className={css.bottomSubscription}>
                 A simple and clear registration and login procedure will be
-                understandable to any user, regardless of age. 
-                {/* The intuitive
-                interface will also not leave you indifferent! */}
+                understandable to any user, regardless of age.
               </p>
             </div>
           </div>

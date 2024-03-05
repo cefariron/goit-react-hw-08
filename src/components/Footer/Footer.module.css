@@ -1,7 +1,8 @@
 .footer {
-    background-color: white;
     margin-top: 4px;
     padding: 15px 5px;
+
+    background-color: white;
     border-top: 1px solid rgb(214, 214, 214);
 }
 
@@ -38,6 +39,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
     margin-bottom: 12px;
 }
 
@@ -57,9 +59,9 @@
 }
 
 @media only screen and (min-width: 363px) {
-   .logoText {
-    font-size: 16px;
-   }
+    .logoText {
+        font-size: 16px;
+    }
 }
 
 .subTitle {
@@ -96,6 +98,7 @@
     .socialList {
         flex-direction: column;
         gap: 15px;
+
         margin-right: 10px;
     }
 }
@@ -164,6 +167,7 @@ address {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
     max-width: 360px;
     margin-inline: auto;
 }
@@ -185,18 +189,17 @@ address {
 }
 
 .input {
-    box-sizing: border-box;
-    background: none;
     margin: 0px;
-    min-width: 0px;
     padding: 8px 8px;
+    min-width: 0px;
     width: 100%;
+
+    box-sizing: border-box;
     color: rgb(38, 38, 38);
+    background: none;
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
-
-
     border: 1.3px solid #d6d8db;
 }
 
@@ -208,39 +211,41 @@ address {
     position: absolute;
     top: -22%;
     left: 10px;
-    background-color: white;
     padding: 0 5px;
 
     color: rgb(124, 124, 124);
+    background-color: white;
     font-size: 12px;
-    /* line-height: 22px; */
-    font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) {
     .label {
         top: -22%;
-  }
+    }
 }
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 0px;
+    min-width: 64px;
+    padding: 8px 16px;
+
     box-sizing: border-box;
     outline: none;
     border: 1px solid transparent;
-    margin: 0px;
     cursor: pointer;
-    font-family: Manrope, sans-serif;
-    min-width: 64px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    color: rgba(0, 0, 0, 0.87);;
+    color: rgba(0, 0, 0, 0.87);
+    ;
     background-color: rgb(125, 255, 192);
-    padding: 8px 16px;
     border-radius: 6px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    font-family: Manrope, sans-serif;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.375;
     font-weight: 700;
 }
 
@@ -251,17 +256,18 @@ address {
 
 .errorInput {
     border: 1px solid rgb(255, 37, 37);
-  }
-  
+}
 
-  .successInput {
+
+.successInput {
     border: 1px solid rgb(0, 229, 0);
-  }
+}
 
-  .error {
+.error {
     position: absolute;
     bottom: -18px;
     left: 5px;
+
     color: red;
     font-size: 12px;
-  }
+}

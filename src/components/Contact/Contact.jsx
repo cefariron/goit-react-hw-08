@@ -28,7 +28,11 @@ export const Contact = ({ id, name, number, handleContactClick }) => {
         </div>
       </div>
       <div className={css.btnContainer}>
-        <button className={css.btn} type="button" onClick={() => handleContactClick(id)}>
+        <button
+          className={css.btn}
+          type="button"
+          onClick={() => handleContactClick(id)}
+        >
           <RxHamburgerMenu className={css.icon} />
         </button>
         <button className={css.btn} type="button" onClick={handleRemove}>

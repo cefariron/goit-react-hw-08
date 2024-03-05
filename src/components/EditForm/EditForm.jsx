@@ -41,9 +41,9 @@ export const EditForm = ({ id, name, number, setIsEditNow }) => {
         validationSchema={validationSchema}
       >
         {({ getFieldProps, errors, touched }) => (
-        <Form className={css.form}>
-          <h3 className={css.title}>Edit contact</h3>
-          <div
+          <Form className={css.form}>
+            <h3 className={css.title}>Edit contact</h3>
+            <div
               className={css.inputContainer}
               style={{ marginBottom: touched.name && errors.name && "16px" }}
             >
@@ -90,28 +90,28 @@ export const EditForm = ({ id, name, number, setIsEditNow }) => {
                 <span className={css.error}>{errors.number}</span>
               )}
             </div>
-          <div className={css.option}>
-            <div>
-              <label className={css.checkboxContainer}>
-                <input type="checkbox" id="rememberMeCheckbox" />
-                <span className={css.checkmark}></span>
-                Sync with all devices
-              </label>
+            <div className={css.option}>
+              <div>
+                <label className={css.checkboxContainer}>
+                  <input type="checkbox" id="rememberMeCheckbox" />
+                  <span className={css.checkmark}></span>
+                  Sync with all devices
+                </label>
+              </div>
             </div>
-          </div>
-          <div className={css.editBtnContainer}>
-            <button
-              className={css.btnCancel}
-              type="button"
-              onClick={() => setIsEditNow(false)}
-            >
-              Cancel
-            </button>
-            <button className={css.btnSave} type="submit">
-              Save
-            </button>
-          </div>
-        </Form>
+            <div className={css.editBtnContainer}>
+              <button
+                className={css.btnCancel}
+                type="button"
+                onClick={() => setIsEditNow(false)}
+              >
+                Cancel
+              </button>
+              <button className={css.btnSave} type="submit">
+                Save
+              </button>
+            </div>
+          </Form>
         )}
       </Formik>
     </>

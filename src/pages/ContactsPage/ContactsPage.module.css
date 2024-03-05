@@ -1,13 +1,14 @@
 .container {
-    padding: 0 10px;
-    position: relative;
+  padding: 0 10px;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
+  .container {
     display: flex;
     gap: 15px;
     justify-content: space-between;
+
     max-width: 732px;
     margin-top: 15px;
     margin-inline: auto;
@@ -16,6 +17,6 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-  max-width: 988px;
-}
+    max-width: 988px;
+  }
 }

@@ -10,24 +10,11 @@
 
 .mainContainer {
     flex: 1 1 0%;
-    /* padding-bottom: 30px; */
     padding-inline: 8%;
     padding-top: 30px;
     height: 100%;
     border-radius: 4px;
     background-color: rgb(224, 245, 245);
-}
-
-@media only screen and (min-width: 375px) {
-    .mainContainer {
-    
-  }
-}
-
-@media only screen and (min-width: 425px) {
-    .mainContainer {
-    
-  }
 }
 
 .contentContainer {
@@ -88,9 +75,6 @@
 
 .topSubscription {
     margin-bottom: 10px;
-}
-
-.bottomSubscription {
 }
 
 .wrap {

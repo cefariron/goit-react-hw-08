@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isContactModalOpen: false,
@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const contactModalSlice = createSlice({
-  name: 'contactModal',
+  name: "contactModal",
   initialState,
   reducers: {
     openContactModal(state, action) {
@@ -20,6 +20,7 @@ const contactModalSlice = createSlice({
   },
 });
 
-export const { openContactModal, closeContactModal } = contactModalSlice.actions;
+export const { openContactModal, closeContactModal } =
+  contactModalSlice.actions;
 
 export const modalReducer = contactModalSlice.reducer;

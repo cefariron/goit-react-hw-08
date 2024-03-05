@@ -2,29 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
     margin: 15px 0;
     margin-inline: auto;
-}
-
-.logoContainer {
-    width: 208px;
-    height: 50px;
-    background-image: url(https://operto.my.site.com/main/servlet/rtaImage?eid=ka04x000001GMfn&feoid=00N4x00000OMoYy&refid=0EM4x000000YbBy);
-    background-size: cover;
-    background-position: center;
-    align-self: center;
-    margin-bottom: 24px;
-}
-
-.wContainer {
-    margin-bottom: 8px;
-}
-
-.wSpan {
-    margin: 0px;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 700;
 }
 
 .inputContainer {
@@ -32,19 +12,19 @@
 }
 
 .input {
-    box-sizing: border-box;
-    background: none;
     margin: 0px;
     min-width: 0px;
     padding: 8px 8px;
     width: 100%;
+
+    box-sizing: border-box;
     color: rgb(38, 38, 38);
+    background: none;
+    border-radius: 8px;
+    border: 1.3px solid #d6d8db;
+
     font-size: 16px;
     font-weight: 500;
-    border-radius: 8px;
-
-
-    border: 1.3px solid #d6d8db;
 }
 
 .input:focus {
@@ -54,20 +34,19 @@
 .label {
     position: absolute;
     top: -24%;
-    /* top: -33%; */
     left: 10px;
-    background-color: white;
+
     padding: 0 5px;
 
     color: rgb(124, 124, 124);
+    background-color: white;
     font-size: 12px;
-    /* line-height: 22px; */
-    font-weight: 400;
 }
 
 .checkboxContainer {
     display: inline-block;
     position: relative;
+
     padding-left: 25px;
     cursor: pointer;
     font-size: 16px;
@@ -84,6 +63,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+
     height: 14px;
     width: 14px;
     border: 2px solid rgb(124, 124, 124);
@@ -91,7 +71,7 @@
     transition: background-color 0.3s;
 }
 
-.checkboxContainer input:checked ~ .checkmark {
+.checkboxContainer input:checked~.checkmark {
     background-color: blue;
     border-color: blue;
 }
@@ -102,7 +82,7 @@
     display: none;
 }
 
-.checkboxContainer input:checked ~ .checkmark:after {
+.checkboxContainer input:checked~.checkmark:after {
     display: block;
 }
 
@@ -133,24 +113,27 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    margin: 0px;
+    padding: 8px 16px;
+    min-width: 64px;
+    width: 90px;
+
+    color: black;
+    background-color: rgb(125, 255, 192);
     box-sizing: border-box;
     outline: 0px;
     border: 1px solid transparent;
-    margin: 0px;
-    cursor: pointer;
-    text-transform: none;
-    font-family: Manrope, sans-serif;
-    min-width: 64px;
-    width: 90px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    color: black;
-    background-color: rgb(125, 255, 192);
     box-shadow: none;
-    padding: 8px 16px;
     border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    font-family: Manrope, sans-serif;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.375;
     font-weight: 700;
+    text-transform: none;
 }
 
 .btnSave:hover,
@@ -163,24 +146,27 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    margin: 0px;
+    padding: 8px 16px;
+    min-width: 64px;
+    width: 90px;
+
+    color: black;
+    background-color: rgb(255, 125, 125);
     box-sizing: border-box;
     outline: 0px;
     border: 1px solid transparent;
-    margin: 0px;
-    cursor: pointer;
-    text-transform: none;
-    font-family: Manrope, sans-serif;
-    min-width: 64px;
-    width: 90px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    color: black;
-    background-color: rgb(255, 125, 125);
     box-shadow: none;
-    padding: 8px 16px;
     border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    font-family: Manrope, sans-serif;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.375;
     font-weight: 700;
+    text-transform: none;
 }
 
 .btnCancel:hover,
@@ -190,17 +176,18 @@
 
 .errorInput {
     border: 1px solid rgb(255, 37, 37);
-  }
-  
+}
 
-  .successInput {
+
+.successInput {
     border: 1px solid rgb(0, 229, 0);
-  }
+}
 
-  .error {
+.error {
     position: absolute;
     bottom: -18px;
     left: 5px;
+
     color: red;
     font-size: 12px;
-  }
+}

@@ -33,16 +33,19 @@ export default function HomePage() {
             style={{ transform: `translateX(-${activeSlide * 100}%)` }}
           >
             <div className={css.slide}>
-              <div className={css.slideContent}><FirstSlide /></div>
-              
+              <div className={css.slideContent}>
+                <FirstSlide />
+              </div>
             </div>
             <div className={css.slide}>
-            <div className={css.slideContent}><SecondSlide /></div>
-              
+              <div className={css.slideContent}>
+                <SecondSlide />
+              </div>
             </div>
             <div className={css.slide}>
-            <div className={css.slideContent}><ThirdSlide /></div>
-              
+              <div className={css.slideContent}>
+                <ThirdSlide />
+              </div>
             </div>
           </div>
           <div className={css.arrowsContainer}>

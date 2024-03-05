@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
     margin-top: 15px;
     max-width: 360px;
     margin-inline: auto;
@@ -13,34 +14,22 @@
     }
 }
 
-.wContainer {
-    margin-bottom: 8px;
-}
-
-.wSpan {
-    margin: 0px;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 700;
-}
-
 .inputContainer {
     position: relative;
 }
 
 .input {
+    margin: 0px;
+    padding: 8px 8px;
+    min-width: 0px;
+    width: 100%;
+
+    color: rgb(38, 38, 38);
     box-sizing: border-box;
     background: none;
-    margin: 0px;
-    min-width: 0px;
-    padding: 8px 8px;
-    width: 100%;
-    color: rgb(38, 38, 38);
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
-
-
     border: 1.3px solid #d6d8db;
 }
 
@@ -59,19 +48,18 @@
     position: absolute;
     top: -22%;
     left: 10px;
-    background-color: white;
+
     padding: 0 5px;
 
     color: rgb(124, 124, 124);
+    background-color: white;
     font-size: 12px;
-    /* line-height: 22px; */
-    font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) {
     .label {
         top: -17%;
-  }
+    }
 }
 
 .togglePassword {
@@ -94,6 +82,7 @@
 .checkboxContainer {
     display: inline-block;
     position: relative;
+
     padding-left: 25px;
     cursor: pointer;
     font-size: 14px;
@@ -135,7 +124,7 @@
     }
 }
 
-.checkboxContainer input:checked ~ .checkmark {
+.checkboxContainer input:checked~.checkmark {
     background-color: blue;
     border-color: blue;
 }
@@ -146,7 +135,7 @@
     display: none;
 }
 
-.checkboxContainer input:checked ~ .checkmark:after {
+.checkboxContainer input:checked~.checkmark:after {
     display: block;
 }
 
@@ -199,20 +188,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 0px;
+    padding: 8px 16px;
+    min-width: 64px;
+
     box-sizing: border-box;
     outline: none;
     border: 1px solid transparent;
-    margin: 0px;
     cursor: pointer;
-    font-family: Manrope, sans-serif;
-    min-width: 64px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    color: rgba(0, 0, 0, 0.87);;
+    color: rgba(0, 0, 0, 0.87);
+    ;
     background-color: rgb(125, 255, 192);
-    padding: 8px 16px;
     border-radius: 6px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    font-family: Manrope, sans-serif;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.375;
     font-weight: 700;
 }
 
@@ -231,7 +224,6 @@
     margin: 8px auto;
     line-height: 17px;
     font-size: 14px;
-    font-weight: 400;
 }
 
 .registerLink {
@@ -242,12 +234,12 @@
     align-self: center;
     display: flex;
     justify-content: space-around;
+
     margin-top: 20px;
     gap: 24px;
 
     line-height: 17px;
     font-size: 14px;
-    font-weight: 400;
 }
 
 .privacyLink {
@@ -263,17 +255,18 @@
 
 .errorInput {
     border: 1px solid rgb(255, 37, 37);
-  }
-  
+}
 
-  .successInput {
+
+.successInput {
     border: 1px solid rgb(0, 229, 0);
-  }
+}
 
-  .error {
+.error {
     position: absolute;
     bottom: -18px;
     left: 5px;
+
     color: red;
     font-size: 12px;
-  }
+}

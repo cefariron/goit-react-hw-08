@@ -29,9 +29,13 @@ export const ContactList = () => {
               <li
                 className={css.item}
                 key={id}
-                // onClick={() => handleContactClick(id)}
               >
-                <Contact handleContactClick={handleContactClick} id={id} name={name} number={number} />
+                <Contact
+                  handleContactClick={handleContactClick}
+                  id={id}
+                  name={name}
+                  number={number}
+                />
               </li>
             );
           })}

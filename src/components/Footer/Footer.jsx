@@ -86,10 +86,15 @@ export const Footer = () => {
                   <address>Adress: Shevchenko st., 28A, Kyiv, Ukraine</address>
                 </li>
                 <li className={`${css.contactsItem} ${css.phone}`}>
-                  <a className={css.contactsLink} href="tel:+380971112233">+38(097)1112233</a>
+                  <a className={css.contactsLink} href="tel:+380971112233">
+                    +38(097)1112233
+                  </a>
                 </li>
                 <li className={`${css.contactsItem} ${css.email}`}>
-                  <a className={css.contactsLink} href="mailto:info@cloudcontacts.com">
+                  <a
+                    className={css.contactsLink}
+                    href="mailto:info@cloudcontacts.com"
+                  >
                     info@cloudcontacts.com
                   </a>
                 </li>
